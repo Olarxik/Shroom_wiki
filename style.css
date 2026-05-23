@@ -1,4 +1,4 @@
-/* Импортируем стильный шрифт */
+
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 * {
@@ -31,7 +31,6 @@ body {
     overflow-x: hidden;
 }
 
-/* --- ШАПКА САЙТА (Blur эффект) --- */
 header {
     background-color: rgba(11, 16, 13, 0.75);
     backdrop-filter: blur(12px);
@@ -66,7 +65,6 @@ header {
     margin-top: 2px;
 }
 
-/* Навигация */
 nav {
     display: flex;
     gap: 8px;
@@ -93,14 +91,12 @@ nav a.active {
     box-shadow: inset 0 0 12px rgba(74, 222, 128, 0.05);
 }
 
-/* Контейнер */
 .container {
     max-width: 1140px;
     margin: 50px auto;
     padding: 0 20px;
 }
 
-/* --- ПРИВЕТСТВЕННЫЙ БЛОК --- */
 .welcome {
     background: linear-gradient(135deg, rgba(20, 35, 26, 0.6) 0%, rgba(11, 16, 13, 0.6) 100%);
     border: 1px solid rgba(74, 222, 128, 0.15);
@@ -137,7 +133,6 @@ nav a.active {
     font-size: 15px;
 }
 
-/* --- ЗАГОЛОВКИ СЕКЦИЙ --- */
 .category-section {
     margin-bottom: 70px;
 }
@@ -155,14 +150,12 @@ nav a.active {
 .cat-title-bad { color: var(--neon-bad); text-shadow: 0 0 20px var(--neon-bad-glow); }
 .cat-title-weird { color: var(--neon-weird); text-shadow: 0 0 20px var(--neon-weird-glow); }
 
-/* --- СЕТКА КАРТОЧЕК --- */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
     gap: 30px; 
 }
 
-/* --- КАРТОЧКА --- */
 .card {
     background-color: var(--color-card-bg); 
     backdrop-filter: blur(6px);
@@ -177,7 +170,6 @@ nav a.active {
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Кастомный ховер для разных категорий */
 #edible .card:hover { border-color: rgba(74, 222, 128, 0.4); box-shadow: 0 20px 35px rgba(0,0,0,0.6), 0 0 25px rgba(74, 222, 128, 0.1); }
 #toxic .card:hover { border-color: rgba(248, 113, 113, 0.4); box-shadow: 0 20px 35px rgba(0,0,0,0.6), 0 0 25px rgba(248, 113, 113, 0.1); }
 #hallucinogenic .card:hover { border-color: rgba(192, 132, 252, 0.4); box-shadow: 0 20px 35px rgba(0,0,0,0.6), 0 0 25px rgba(192, 132, 252, 0.1); }
@@ -186,7 +178,6 @@ nav a.active {
     transform: translateY(-8px);
 }
 
-/* ВЕРХНЯЯ ЧАСТЬ КАРТОЧКИ (Картинка) */
 .card img {
     width: 100%;
     height: 200px;
@@ -199,7 +190,6 @@ nav a.active {
     transform: scale(1.04);
 }
 
-/* НИЖНЯЯ ЧАСТЬ КАРТОЧКИ (Текстовый блок) */
 .card-content {
     padding: 22px;
     flex-grow: 1;
@@ -223,7 +213,6 @@ nav a.active {
     line-height: 1.6;
 }
 
-/* --- ФУТЕР --- */
 footer {
     background-color: #070a08;
     padding: 35px 0;
@@ -244,20 +233,4 @@ footer {
 @keyframes pulseText {
     0% { opacity: 0.6; }
     100% { opacity: 1; color: #64748b; text-shadow: 0 0 10px rgba(255,255,255,0.05); }
-}
-
-/* Мобильный адаптив */
-@media (max-width: 640px) {
-    .header-inner {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-    nav a {
-        margin-left: 0;
-        padding: 6px 12px;
-    }
-    .container {
-        margin: 25px auto;
-    }
 }
