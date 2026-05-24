@@ -169,6 +169,19 @@ nav a.active {
     flex-direction: column;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
+.big-card {
+    background-color: var(--color-card-bg); 
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    min-height: 820px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
 #edible .card:hover { border-color: rgba(74, 222, 128, 0.4); box-shadow: 0 20px 35px rgba(0,0,0,0.6), 0 0 25px rgba(74, 222, 128, 0.1); }
 #toxic .card:hover { border-color: rgba(248, 113, 113, 0.4); box-shadow: 0 20px 35px rgba(0,0,0,0.6), 0 0 25px rgba(248, 113, 113, 0.1); }
