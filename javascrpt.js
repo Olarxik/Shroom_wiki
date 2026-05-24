@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const targetId = link.getAttribute("href");
             if (targetId.startsWith("#")) {
                 e.preventDefault(); 
-                const targetSection = document.querySelector(targetId);
+                const targetSection = document.querySelector(targetId);// Знаходимо відповідний розділ
                 if (targetSection) {
                     targetSection.scrollIntoView({
                         behavior: "smooth",
